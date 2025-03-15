@@ -1,61 +1,111 @@
 <!DOCTYPE html>
-<html class="js cssanimations csstransforms" xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html lang="en">
 <head>
-    <title>Replicated Reddit Page</title>
-    <link rel="stylesheet" href="item2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit-like Interface</title>
+    <link rel="stylesheet" href="Item2.css">
 </head>
-<body class="listing-page hot-page">
-    <script></script>
-
-    <div id="header" role="banner">
-        <a id="jumpToContent" tabindex="1" href="#content">jump to content</a>
-        
-        <div id="header-bottom-left">
-            <a href="/" id="header-img" class="default-header" title="">reddit.com</a>&nbsp;
-            <ul class="tabmenu">
-                <li class="selected"><a href="https://old.reddit.com/" class="choice">hot</a></li>
-                <li><a href="https://old.reddit.com/new/" class="choice">new</a></li>
-                <li><a href="https://old.reddit.com/rising/" class="choice">rising</a></li>
-                <li><a href="https://old.reddit.com/controversial/" class="choice">controversial</a></li>
-                <li><a href="https://old.reddit.com/top/" class="choice">top</a></li>
-                <li><a href="https://old.reddit.com/wiki/" class="choice">wiki</a></li>
-            </ul>
+<body>
+    <header class="main-header">
+        <div class="header-left">
+            <img src="reddit-logo.png" alt="Reddit Logo" class="logo">
         </div>
-
-        <div id="header-bottom-right">
-            <span class="user">
-            Want to join?
-            <a href="https://www.reddit.com/login" class="login-required login-link">Log in</a>
-            or
-            <a href="https://www.reddit.com/login" class="login-required">sign up</a>
-            in seconds
-            </span>
-            <ul class="flat-list hover"
+        <div class="header-right">
+            <span class="username">7hundredand77</span>
+            <nav>
+                <a href="#" class="header-link">Preferences</a>
+                <a href="#" class="header-link">Logout</a>
+            </nav>
         </div>
+    </header>
 
+    <nav class="sub-header">
+        <div class="nav-tabs">
+            <a href="#" class="tab active">What's Hot</a>
+            <a href="#" class="tab">New</a>
+            <a href="#" class="tab">Controversial</a>
+            <a href="#" class="tab">Top</a>
+            <a href="#" class="tab">Saved</a>
+        </div>
+        <div class="sub-header-right">
+            <input type="search" class="search-bar" placeholder="Search" aria-label="Search">
+            <span class="new-msg">1 New Msg</span>
+            <span class="stats">53,211 Users</span>
+            <span class="stats">4,887 Online</span>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <nav class="subreddit-nav">
+                <a href="#" class="subreddit-link">Front Page</a>
+                <a href="#" class="subreddit-link">Pics</a>
+                <a href="#" class="subreddit-link">Science</a>
+                <a href="#" class="subreddit-link">Technology</a>
+                <a href="#" class="subreddit-link">AskReddit</a>
+                <a href="#" class="subreddit-link">Funny</a>
+                <a href="#" class="subreddit-link">WTF</a>
+                <a href="#" class="subreddit-link active">IAMA</a>
+                <a href="#" class="subreddit-link">World News</a>
+                <a href="#" class="subreddit-link">TIL</a>
+                <a href="#" class="subreddit-link">WebDesign</a>
+                <a href="#" class="subreddit-link">Atheist</a>
+                <a href="#" class="subreddit-link">More...</a>
+            </nav>
+
+            <section class="sidebar-section">
+                <h3>Submit a Link</h3>
+                <p>Share an interesting article, blog, video, or picture.</p>
+            </section>
+
+            <section class="sidebar-section">
+                <h3>Create a Community</h3>
+                <p>Start a subreddit for your interests.</p>
+                <img src="reddit-ad.jpg" alt="LARPing Community Ad" width="200">
+            </section>
+        </aside>
+
+        <main class="content">
+            <article class="post">
+                <div class="vote-box">
+                    <button class="upvote" aria-label="Upvote">&#9650;</button>
+                    <span class="score">232</span>
+                    <button class="downvote" aria-label="Downvote">&#9660;</button>
+                </div>
+                <div class="post-content">
+                    <h2 class="post-title">I Am the Designer of This UI, AMA</h2>
+                    <p class="post-meta">Submitted 15 hours ago by <b>username</b></p>
+                    <div class="post-actions">
+                        <a href="#">Comments</a>
+                        <a href="#">Share</a>
+                        <a href="#">Save</a>
+                        <a href="#">Hide</a>
+                        <a href="#">Report</a>
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <aside class="comments-section">
+            <section class="comment">
+                <div class="comment-header">
+                    <span class="comment-username">UserNumber42</span>
+                    <span class="comment-meta">47 points, 21 hours ago</span>
+                </div>
+                <p class="comment-text">This is the first redesign I've seen that doesn't suck...</p>
+                <div class="comment-actions">
+                    <a href="#">Permalink</a>
+                    <a href="#">Parent</a>
+                    <a href="#">Reply</a>
+                </div>
+            </section>
+        </aside>
     </div>
 
-    <div class="side"></div>
-
-    <a name="content"></a>
-
-    <div class="content" role="main">
-  
-    </div>
-
-    <div class="footer-parent"></div>
-
-    <script id="login-popup" type="text/template"></script>
-    <script id="lang-popup" type="text/template"></script>
-
-    <img id="hsts_pixel" src="https://www.reddit.com/static/pixel.png">
-
-    <p class="debuginfo"></p>
-
-    <script type="text/javascript" src="https://www.redditstatic.com/reddit.en.ANl2wlpNJlV.js"></script>
-    <script type="text/javascript" src="https://www.redditstatic.com/spoiler-text.vsLMFxcsttg.js"></script>
-    <script type="text/javascript" src="https://www.redditstatic.com/onetrust.6tPw2JUgoc.js"></script>
+    <footer class="main-footer">
+        <button class="nav-button">Newer</button>
+        <button class="nav-button">Older</button>
+    </footer>
 </body>
 </html>
-
-
