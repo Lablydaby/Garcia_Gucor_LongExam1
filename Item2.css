@@ -1,0 +1,82 @@
+/* General Styles */
+body {
+    font: normal x-small verdana,arial,helvetica,sans-serif;
+    background-color: white;
+    z-index: 1;
+    min-height: 100%;
+}
+  
+  /* Header Styling */
+  #header {
+    border-bottom: 1px solid #5f99cf;
+    position: relative;
+    background-color: #cee3f8;
+    /* z-index: 99; */
+  }
+  
+  .flat-list{
+  list-style-type: none;
+  display: inline;
+  }
+
+  .tabmenu {
+    list-style-type: none;
+    white-space: nowrap;
+    display: inline-block;
+    margin-top: 5px;
+    position:bottom;
+  }
+  
+  #header-bottom-left {
+    display: flex;
+    align-items: bottom;
+  }
+
+  #header-bottom-right {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  background-color: #EFF7FF;
+  padding: 4px;
+  line-height: 12px;
+  border-top-left-radius: 7px;
+}
+  
+  #header-img {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ff4500;
+    margin-right: 15px;
+  }
+  
+  /* Navigation Tabs */
+  .tabmenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: red;
+  }
+  
+  .tabmenu li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .tabmenu a {
+    text-decoration: none;
+    color: #0079d3;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .tabmenu .selected a {
+    font-weight: bold;
+    background-color: #f6f7f8;
+    border: 1px solid #ccc;
+  }
+  
+  .tabmenu a:hover {
+    background-color: #dae0e6;
+  
