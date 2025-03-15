@@ -3,16 +3,15 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 20px;
-    background-color: #FFC800;
+    background-color: #ffffff;
     color: #333;
-
     display: flex;
     flex-flow: column;
 }
 
 header {
     text-align: center;
-    color: #1e212b;
+    color: #333;
     margin-bottom: 20px;
 }
 
@@ -24,9 +23,9 @@ main {
 .step {
     display: none;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #faba17;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: #dea514;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 700px;
     height: auto;
@@ -39,6 +38,9 @@ main {
     display: block;
 }
 
+.content-text{
+    color:white;
+}
 
 .step:target {
     display: flex;
@@ -50,16 +52,24 @@ main {
 
 nav {
     margin-top: 10px;
-    justify-content: center;
+    justify-content: space-between;
+    display: flex;
 }
 
 nav a {
-    color: #007bff;
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
     font-size: large;
     margin-right: 20px;
     font-weight: bold;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav a:last-child {
+    margin-left: auto;
 }
 
 nav a:hover {
@@ -67,7 +77,20 @@ nav a:hover {
 }
 
 nav a:focus {
-    outline: 2px dashed #FFC800;
+    outline: 2px dashed #7f7f7e;
+}
+
+body:not(:has(.step:target)) .step:first-of-type {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+
+.step:target {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 .step:focus-within {
