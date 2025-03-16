@@ -1,5 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
 
+img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    display: block;
+}
+
+h1 {
+    font-weight: bolder;
+    text-align: center;
+    font-size:50px;
+}
+
+h2 {
+    font-weight: bold;
+    text-align: center;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
@@ -11,9 +35,9 @@
 }
 
 .news-container {
+    display: flex;
     background-color: #f6fafd;
     gap: 20px;
-
 }
 
 .news-header {
@@ -27,7 +51,6 @@
     height: auto;
     justify-content: center;
 }
-
 
 .newsfeed {
     display: flex;
@@ -47,43 +70,12 @@
     padding: 30px;
 }
 
-.link {
-    align-self: flex-end;
-}
-
-img {
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    display: block;
-}
-
-h1 {
-    font-weight: bolder;
-    text-align: center;
-    font-size:50px;
-}
-
-h2 {
-    font-weight: bold;
-    text-align: center;
-}
-
-.date {
-    color: gray;
-}
-
 .news-card:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     transform: scale(1.02);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-a:hover {
-    color: black;
-    text-decoration: underline;
-    transition: color 0.2s ease;
-}
 .sidebar {
     background-color: #f6fafd; /* Light gray background */
     padding: 16px;
@@ -98,12 +90,6 @@ a:hover {
     padding: 16px;
     border-radius: 8px;
     height: 100%;
-}
-
-
-.news-container {
-    display: flex;
-    gap: 20px; /* Space between sidebar and newsfeed */
 }
 
 .sidebar h2 {
@@ -135,6 +121,14 @@ a:hover {
 .sidebar a:hover {
     color: #0056b3;
     text-decoration: underline;
+}
+
+.link {
+    align-self: flex-end;
+}
+
+.date {
+    color: gray;
 }
 
 @media (max-width: 768px) {
