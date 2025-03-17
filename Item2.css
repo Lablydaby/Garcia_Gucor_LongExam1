@@ -28,6 +28,12 @@ h3 {
   color:#0051C7;
 }
 
+ul {
+  padding-left: 0;
+  margin-left: 20px;
+  list-style-position: outside;
+}
+
 a:hover {
   text-decoration: underline;
 }
