@@ -45,11 +45,9 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.main-header{
   padding: 5px 10px;
   border-bottom: 1.5px solid #9ea2a6;
+  position: relative;
 }
 
 .sub-header {
@@ -58,8 +56,11 @@ a:hover {
   display: flex;
   background: #eeeff6;
   padding-top: 10px;
-  border-bottom: 1.5px solid #ccc;
-  
+  /* border-bottom: 1.5px solid #ccc;  */
+}
+
+.sub-header-right{
+  margin-right: 20px;
 }
 
 .logo {
@@ -73,12 +74,31 @@ a:hover {
   align-items: center;
 }
 
-.nav-tabs{
-  margin-left: 200px;
+.Usernamee {
+  color: blue;
+  font-weight: bold;
 }
 
 .header-link {
-  color: #333;
+  color: blue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header-right {
+  background: #eeeff6;
+  padding: 10px 15px;
+  border: 1px solid #9ea2a6;S
+  display: flex; 
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 70px;
+}
+
+.nav-tabs{
+  margin-left: 200px;
 }
 
 /* Navigation */
