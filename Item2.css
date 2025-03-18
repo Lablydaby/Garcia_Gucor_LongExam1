@@ -1,0 +1,434 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+strong p {
+  float: right;
+  color: #717a7d;
+  margin-left: 10px;
+}
+
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  background: #fff;
+  color: #222;
+  line-height: 1.5;
+}
+
+a {
+  color: #0051C7;
+  text-decoration: none;
+}
+
+h3 {
+  color:#0051C7;
+}
+
+ul {
+  padding-left: 0;
+  margin-left: 20px;
+  list-style-position: outside;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+.main-header {
+  background: #CEE3F8;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  border-bottom: 1.5px solid #9ea2a6;
+  position: relative;
+}
+
+.sub-header {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  background: #eeeff6;
+  padding-top: 10px;
+  /* border-bottom: 1.5px solid #ccc;  */
+}
+
+.sub-header-right{
+  margin-right: 20px;
+}
+
+.logo {
+  width: 400px;
+  margin-top: 5px;
+}
+
+.header-right, .nav-tabs, .post-actions, .comment-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.Usernamee {
+  color: blue;
+  font-weight: bold;
+}
+
+.header-link {
+  color: blue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header-right {
+  background: #eeeff6;
+  padding: 10px 15px;
+  border: 1px solid #9ea2a6;S
+  display: flex; 
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 70px;
+}
+
+.nav-tabs{
+  margin-left: 200px;
+}
+
+/* Navigation */
+.tab {
+  padding: 2px 6px;
+  color: #3d638a;
+  border: 1px solid #9ea2a6;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, #fff, #EFF7FF);
+  font-weight: bold;
+}
+
+.tab.active {
+  background: #fff;
+  border-bottom-color: #fff;
+}
+
+.search-bar {
+  padding: 2px 5px;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+
+.subreddit-link {
+  display: flex; 
+  align-items: center; 
+}
+.subreddit-link img {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px; 
+}
+
+/* Layout */
+.main-container {
+  background-color: #fbfbfb;
+  display: flex;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.sidebar {
+  width: 200px;
+  flex-shrink: 0;
+  background: #EFF8FF;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-section {
+  color: #92a3b0; 
+}
+
+.subreddit-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.subreddit-link {
+  font-family: 'Orbitron', sans-serif;
+  padding: 2px 5px;
+  color: #5e5f61;
+}
+
+.subreddit-link.active {
+  background: #EFF7FF;
+  font-weight: bold;
+}
+
+.sidebar-section {
+  margin-top: 20px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #dcedff;
+}
+
+.sidebar-section + img {
+  margin-top: 20px;
+}
+
+
+/* Content */
+.content {
+  flex-grow: 1;
+  max-width: 60%;
+}
+
+.post {
+  display: flex;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.postclicked {
+  display: flex;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+  background-color: #fef3ef;
+}
+
+.vote-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  min-width: 40px;
+  margin-right: 10px;
+}
+
+.upvote, .downvote {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #c6c6c6;
+  font-size: 16px;
+}
+
+.score {
+  color: #c6c6c6;
+  font-weight: bold;
+}
+
+.post-title {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #3838f3;
+}
+
+.post-link {
+  font-weight: 100;
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #c6c6c6;
+}
+
+.post-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100px;
+  padding-right:15px;
+}
+
+.post-meta, .comment-meta, .stats {
+  color: #888;
+  font-size: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.post-index {
+  padding-left: 10px;
+  font-weight: 100;
+  font-size: small;
+  color: #c6c6c6;
+  align-self: center;
+}
+
+.post-content {
+  flex: 1;
+}
+
+h2 {
+  line-height: normal;
+}
+
+
+/* Comments */
+
+.halfcomments {
+  background-color: #f5f5f5;
+  width: 100%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+
+}
+
+.comment-container {
+  margin-left: 10px;
+}
+
+.comment.reply div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.points-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.points-box .votes {
+  background-color: white;
+  display: flex;
+}
+
+.points{
+  padding-right: 10px;
+}
+
+.comments {
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+.comment > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px; 
+}
+
+.L-text {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.text-gray {
+  color: grey;
+}
+
+.trebuchet {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.votes-count {
+  display: flex;
+  flex-direction: column;
+}
+
+.votes-count p {
+  padding: 2px;
+  margin: 0;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-orange {
+  color: #ff4d0a;
+}
+
+.points-box .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.points-box .info p {
+  margin: 0;
+  padding: 4px;
+}
+
+.text-bold {
+  font-weight: 800;
+}
+
+.padding-10 {
+  padding: 10px;
+}
+
+.comment-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  padding-bottom: 0;
+  width: 100%;
+}
+
+.float-right {
+  text-align: right;
+  margin-right: 40px;
+}
+
+.comment-box input {
+  width: 90%;
+  height: 50px;
+  padding: 10px;
+}
+
+.comment {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+  align-items: top;
+  margin: 0;
+}
+
+.flex * {
+  margin: 0;
+}
+
+.comment-action a {
+  color: gray !important;
+}
+
+.reply {
+  border-left: 2px solid rgb(214, 206, 206);
+}
+
+/* Footer */
+.main-footer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.nav-button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: linear-gradient(to bottom, #fff, #EFF7FF);
+  cursor: pointer;
+}
+
+.new-msg {
+  color: orangered;
+}
